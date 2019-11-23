@@ -1,22 +1,125 @@
-.App {
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #8d8b8b;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  max-height: 70px;
+  padding: 0 30px;
+  background-color: #30325b;
+  box-shadow: 0 1px 20px #00000062;
+  box-sizing: border-box;
+  align-items: center;
+  color: #d7d7d7;
+}
+
+.logo {
+  flex: 2;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+ul.nav-link {
+  position: relative;
+  right: 0;
+  flex: 1;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.nav-link li {
+  box-sizing: border-box;
+  padding: 15px;
+  margin-left: 5px;
+  font-size: 17px;
+}
+
+.nav-link li:hover {
+  background-color: #d7d7d7;
+  color: #30325b;
+  cursor: pointer;
+}
+
+main.main {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3b3b6d;
+  color: #d7d7d7;
+  width: 100%;
+}
+
+/* 
+  #fccb1a */
+img {
+  width: 100%;
+}
+
+.images {
+  height: 500px;
+}
+
+
+.btn-parent {
+  display: grid;
+  width: 250px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button {
+  margin-bottom: 20px;
+  height: 70px;
+  width: 70px;
+  background-color: #30325b;
+  color: #d7d7d7;
+  font-size: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border: none;
+  box-shadow: 0 2px 10px #00000038;
+  font-weight: 600;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #09d3ac;
+h3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #6e6b6b;
+
+}
+
+input.submit {
+  padding: 10px 20px;
+  background-color: #eb2e2e;
+  border: none;
+  transition: all ease-in .3;
+  box-shadow: 0 1px 20px #00000077;
+}
+
+input.submit:active {
+  transform: scale(.9);
 }
